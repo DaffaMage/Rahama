@@ -1,0 +1,90 @@
+@title Rahama
+
+[[MULAI CERITA]](cerita)
+
+[[cerita]]:
+@clear
+"Selamat malam, anda terlambat," ucap seorang anak laki-laki dengan pakaian hitam. Aku tetap memandangnya dengan tatapan tenang, meski hatiku takut.
+
+"Jangan khawatir, anda hanya perlu menandatangani kontrak ini," ucapnya lagi seraya menyerahkan sebuah [[kontrak]].
+
+[[kontrak]]:
+Aku mengambil kontrak itu. Sebuah tulisan tertera di sana,
+
+"Aku mengambil semua keputusan ini atas keinginanku sendiri."
+
+[[tandatangani]] atau [[tidak]]?
+
+[[tidak]]:
+"Maaf, tapi anda tidak bisa tinggal di sini, dan anda tidak bisa menjalani permainan ini."
+
+[[tandatangani]]:
+Jenis kelamin : [[laki-laki]](start, name=Adira) atau [[perempuan]](start, name=Alisa)?
+
+[[start]]:
+Aku menadatanganinya dengan namaku.
+
+@set uang = 500000
+@set hari = 1
+@set not siang
+
+"Apapun keputusan yang kita buat, semua akan datang pada sebuah titik akhir. Anda tidak dapat menutup mata maupun telinga anda. Dan semuanya dimulai," ucap anak laki-laki itu saat dia menerima kontrak itu. Dia masuk ke dalam kegelapan, menghilang dari garis pandangku.
+
+Dan dimulailah ceritaku, cerita {if name=Adira:Adira Mahayana
+[[mulai]]}{else:Alisa Mahayana
+[[mulai]]}
+
+[[mulai]]:
+@clear
+"Siapa di sana?" terdengar suara seorang perempuan, dan detik berikutnya lampu tempat itu menyala. Seorang laki-laki yang sepertinya senior datang menuruni tangga.
+
+"Kamu telat, {name}," ucap senior itu.
+
+[[maaf]]
+
+[[maaf]]:
+"Mohon maaf kak," ucapku kepada senior itu. Senior itu tertawa kecil.
+"Tidak masalah. Perkenalkan, namaku Halim Kusuma."
+
+Perempuan yang teriak sebelumnya tampak malu dan kak Halim menarik tangannya, seperti mengajaknya bersalaman denganku.
+
+"Namaku... Cahaya... Eliza... senang... bertemu... denganmu," ucapnya dengan gagap. Kak Halim hanya tersenyum. [[terima]] [[tolak]]
+
+[[terima]]:
+Aku menerima jabatan tangan itu.
+
+[["Dia mahasiswa baru, sama sepertimu. Semoga kau bisa menikmati tempat ini. Aku akan kembali ke atas. Cahaya, antar dia ke kamarnya," ucap kak Halim."]](next1)
+
+[[tolak]]:
+Aku menolak jabatan tangan itu.
+"Apakah karena tadi? Maafkan aku," ucap Cahaya malu. Halim hanya menggelengkan kepalanya, entah apa yang dia pikirkan.
+
+[["Dia mahasiswa baru, sama sepertimu. Semoga kau bisa menikmati tempat ini. Aku akan kembali ke atas. Cahaya, antar dia ke kamarnya," ucap kak Halim."]](next1)
+
+[[next1]]:
+Aku dan Cahaya naik ke lantai 2 dari kosan ini. Kami tiba di depan salah satu kamar.
+"Semoga betah," ucap Cahaya pelan. Dia pergi tanpa mengatakan apapun lagi kepadaku dan aku membawa barangku masuk ke [[kamar]].
+
+[[kamar]]:
+[menu]
+
+[clear]
+
+Aku berada di kamar.
+
+[[pergi tidur]](tidur)
+
+[menu]:
+[uangcek]
+
+[uangcek]:
+Sisa uang : {uang} Rupiah
+
+[clear]:
+@clear
+[[Kembali ke Kamar Tidur]](kamar)
+
+[[tidur]]:
+@inc hari
+Hari berikutnya...
+@set siang
