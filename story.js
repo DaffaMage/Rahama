@@ -626,7 +626,7 @@ var set = squiffy.set;
 
 
 squiffy.story.start = '_default';
-squiffy.story.id = '5a5dae12b5';
+squiffy.story.id = '712ba16c15';
 squiffy.story.sections = {
 	'_default': {
 		'text': "<p><a class=\"squiffy-link link-section\" data-section=\"cerita\" role=\"link\" tabindex=\"0\">MULAI CERITA</a></p>",
