@@ -11,6 +11,7 @@ https://github.com/textadventures/squiffy
 	<head>
 		<title>Rahama</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="refresh" content="1" />
 		<script src="jquery.min.js"></script>
 		<script src="story.js" charset="UTF-8"></script>
 		
@@ -35,6 +36,13 @@ https://github.com/textadventures/squiffy
 	}
 	</style>
 	<body>
+		<p id="curtime">content.</p>
+		<script>
+			document.getElementById("curtime").innerHTML = Date()
+			document.getElementById("curtime").style.fontSize = "30px";
+			document.getElementById("curtime").style.color = "red";
+			document.getElementById("curtime").style.backgroundColor = "teal";
+		</script>
 		<div id="squiffy-container">
 			<div id="squiffy-header">
 				<a class="squiffy-header-link" id="restart" tabindex="0">Restart</a>
