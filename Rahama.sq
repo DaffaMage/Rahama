@@ -1,6 +1,6 @@
 @title Rahama
 
-[[MULAI CERITA]](cerita)
+[[BEGIN]](cerita)
 
 [[cerita]]:
 @clear
@@ -86,5 +86,28 @@ Sisa uang : {uang} Rupiah
 
 [[tidur]]:
 @inc hari
-Hari berikutnya...
+[[Hari berikutnya...]](hari1)
 @set siang
+
+[[hari1]]:
+Apakah kamu bangun, {name}?
+
+Jawabanmu :
+
+"[[sebentar]]"
+
+ATAU
+
+[[...]] (diamkan)
+
+[[sebentar]]:
+[[Kamu membukakan pintu.]](berangkat)
+
+[[...]]:
+"Halo?" ucap suara itu dengan nada sedih.
+[[Kamu memutuskan untuk membukakan pintu.]](berangkat)
+
+[[berangkat]]:
+"Akhirnya," ucap Eliza senang. Aku segera mempersiapkan diri dan Eliza segera membimbing jalan menuju kampus.
+
+Kami menaiki sebuah bus kota yang haltenya dekat dengan tempat kami tinggal. Jam menunjukkan 5:15 saat kami memasuki bus.
