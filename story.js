@@ -626,10 +626,10 @@ var set = squiffy.set;
 
 
 squiffy.story.start = '_default';
-squiffy.story.id = '712ba16c15';
+squiffy.story.id = '6ca666fc81';
 squiffy.story.sections = {
 	'_default': {
-		'text': "<p><a class=\"squiffy-link link-section\" data-section=\"cerita\" role=\"link\" tabindex=\"0\">MULAI CERITA</a></p>",
+		'text': "<p><a class=\"squiffy-link link-section\" data-section=\"cerita\" role=\"link\" tabindex=\"0\">BEGIN</a></p>",
 		'passages': {
 		},
 	},
@@ -702,8 +702,28 @@ squiffy.story.sections = {
 		},
 	},
 	'tidur': {
-		'text': "<p>Hari berikutnya...</p>",
+		'text': "<p><a class=\"squiffy-link link-section\" data-section=\"hari1\" role=\"link\" tabindex=\"0\">Hari berikutnya...</a></p>",
 		'attributes': ["hari+=1","siang"],
+		'passages': {
+		},
+	},
+	'hari1': {
+		'text': "<p>Apakah kamu bangun, {name}?</p>\n<p>Jawabanmu :</p>\n<p>&quot;<a class=\"squiffy-link link-section\" data-section=\"sebentar\" role=\"link\" tabindex=\"0\">sebentar</a>&quot;</p>\n<p>ATAU</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"...\" role=\"link\" tabindex=\"0\">...</a> (diamkan)</p>",
+		'passages': {
+		},
+	},
+	'sebentar': {
+		'text': "<p><a class=\"squiffy-link link-section\" data-section=\"berangkat\" role=\"link\" tabindex=\"0\">Kamu membukakan pintu.</a></p>",
+		'passages': {
+		},
+	},
+	'...': {
+		'text': "<p>&quot;Halo?&quot; ucap suara itu dengan nada sedih.\n<a class=\"squiffy-link link-section\" data-section=\"berangkat\" role=\"link\" tabindex=\"0\">Kamu memutuskan untuk membukakan pintu.</a></p>",
+		'passages': {
+		},
+	},
+	'berangkat': {
+		'text': "<p>&quot;Akhirnya,&quot; ucap Eliza senang. Aku segera mempersiapkan diri dan Eliza segera membimbing jalan menuju kampus.</p>\n<p>Kami menaiki sebuah bus kota yang haltenya dekat dengan tempat kami tinggal. Jam menunjukkan 5:15 saat kami memasuki bus.</p>",
 		'passages': {
 		},
 	},
